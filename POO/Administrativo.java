@@ -16,8 +16,13 @@ public class Administrativo extends Assistente{
     public void exibeDados(){
         System.out.println("Categoria: Administrativo");
         super.exibeDados();
-        System.out.println("Adicional noturno " + addNoturno);
-        System.out.println("salario com Adicional noturno " + salario + addNoturno);
         System.out.println("Turno: " + turno);
+
+        if (turno.equalsIgnoreCase("noite")){
+            System.out.println("Adicional noturno " + addNoturno);
+            System.out.println("salario com Adicional noturno " + salario + addNoturno);
+        }else{
+            System.out.println("Salario Total");
+        }
     }
 }

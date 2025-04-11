@@ -20,6 +20,6 @@ public class Funcionarios {
 
     public void exibeDados(){
         System.out.println("nome do funcionario " + nome);
-        System.out.printf("salario do funcionario" + salario);
+        System.out.printf("salario do funcionario " + salario);
     }
 }
